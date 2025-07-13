@@ -1,0 +1,1172 @@
+/* font- family */
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Slabo+27px&display=swap');
+
+
+* {
+    font-family: "Exo 2", sans-serif;
+    box-sizing: border-box; 
+}
+:root {
+    scroll-behavior:smooth; 
+}
+
+body{
+    margin: 0; 
+    background-color:rgb(223, 219, 219);
+}
+
+    /* Header Part */
+
+.hero-section{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assets/images/tryimage11.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    height: 105vh;
+    /* text-shadow: 2px 2px 5px rgb(143, 131, 131);  */
+}
+
+.navbar {
+    overflow: hidden;
+    /* background-color:rgba(0, 0, 0, 0.9);   */
+    display: flex;  
+    /* position: fixed;  */
+    width:100%;
+    height:auto;
+}
+.navbar h2 {
+    color: whitesmoke;
+    margin-left: 80px; 
+    font-size: 22px;
+}
+.navbar span {
+    /* background-color: aqua;  */
+    /* margin-left: 120px;    */
+    padding-top: 20px;  
+}
+.navbar a {
+    color:whitesmoke;
+    /* text-align:right;      */
+    margin-left: 136px;   
+    padding: 5px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+.hero-section-term {
+    padding: 60px 80px;
+}
+.hero-section-term > h2{
+    color:white;
+    font-size: 3rem;
+    width: 500px;
+    margin-top: 60px;
+    animation-name: myjob;
+    animation-duration:2s;
+    animation-delay: 2s;
+    animation-iteration-count:2;
+    animation-timing-function:ease-in-out; 
+    animation-direction:normal;
+}
+
+@keyframes myjob {
+    0% {
+        top:-20px;
+        transform: skew(0deg,-5deg) scaleY(0);
+    }
+
+    80% {
+        top:50px;
+        transform: skew(10deg,-5deg) scaleY(1.2);
+    }
+
+    100% {
+        top:70x;
+        transform: skew(-10deg,-5deg) scaleY(1);
+    }
+}
+    /* Main style  */
+
+    /* ABOUT PART  */
+
+.main-section {
+    padding: 0 52px; 
+    margin-left:0;
+    font-size: 18px;
+}
+.main-section article {
+    /* background-color: aqua;   */
+    padding:0 25px;
+}
+.main-section-head h3 {
+    font-size: 35px;
+}
+.main-section-head p {
+    text-indent: 40px;
+    padding: 10px;
+    width: auto; 
+    font-weight: 400;
+    text-align: justify;
+    line-height: 30px;
+}
+.main-section-mid {
+    display: flex;
+    height:480px; 
+    width: auto;
+    gap: 100px;
+}
+.main-section-image img {
+    padding: 7px;
+    margin-top: 50px;
+    margin-left: 20px; 
+    height: 350px;
+    width: 350px;
+    border: 5px solid #B6B09F;
+    border-radius: 50%;
+    transition: transform 2s,width 1s, height 1s;
+}
+.main-section-image img:hover {
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
+    transform: rotate(360deg);
+}
+.main-section-content h4 {
+    font-size: 30px; 
+    margin-top: 40px;
+    margin-left: 140px;
+}
+.main-section-content p {
+    font-size: 25px;
+    /* padding: 5px;  */
+    font-weight: 600;
+    margin-left:200px;
+}
+.main-section-content div {
+    /* padding: 5px;  */
+    margin-left: 50px;
+    display: inline-flex; 
+}
+.main-section-content ul {
+    list-style-image: url('../icon/greater-than.png');
+}
+.main-section-content li {
+    line-height: 50px;
+    font-weight: 400;
+}
+ 
+    /* SKILLS PART */
+
+.main-section-skillpart h3 {
+    font-size:35px;
+}
+.main-section-skillpart > p {
+    font-weight: 400px;
+    text-align: justify; 
+    text-indent: 40px;
+}
+.main-section-skillpart-idea {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "partone parttwo"; 
+    gap: 10px;
+    grid-template-rows:320px;
+}
+.main-section-skillpart-idea-head1{
+    background-color:rgb(238, 234, 234);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.main-section-skillpart-idea-head1 p {
+    font-weight: 600;
+}
+.container {
+    width: 100%;
+    background-color:whitesmoke;
+}
+.skills {
+    text-align: right;
+    padding: 2px 0;
+}
+.html {
+    width: 100%;
+    background-color:lightseagreen;
+}
+.css {
+    width: 90%;
+    background-color:lightseagreen;
+}
+.js {
+    width: 82%;
+    background-color:lightseagreen;
+}
+.python {
+    width: 70%;
+    background-color:lightseagreen;
+}
+.sql {
+    width: 65%;
+    background-color:lightseagreen;
+}
+.java {
+    width: 50%;
+    background-color:lightseagreen;
+}
+.main-section-skillpart-idea-head2{
+    background-color:rgb(238, 234, 234);
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.main-section-skillpart-idea-head2 p {
+    font-weight: 600;
+}
+
+    /* RESUME PART  */
+
+.main-section-resumepart > h3 {
+        font-size: 35px;
+}
+.main-section-resumepart-idea{
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "main main"; 
+    gap: 10px;
+    grid-template-rows:700px; 
+}
+.main-section-resumepart-idea > div {
+    background-color:rgb(238, 234, 234);   
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.main-section-resumepart-idea h2 {
+    font-size: 22px;
+}
+.main-section-resumepart-idea li {
+    list-style-type: square;
+}
+.main-section-resumepart-idea li p {
+    font-weight:400 ;
+    text-align: justify;
+    width: 35vw;
+    line-height: 25px;
+} 
+
+/* CONTACT PART  */
+
+.main-section-contactpart h3 {
+    font-size: 35px;
+}
+.main-section-contactpart-details {
+    padding: 10px;
+    display: grid;
+    grid-template-areas: "mid mid"; 
+    gap: 10px;
+    grid-template-rows:800px; 
+}
+.main-section-contactpart-details > div {
+    background-color:rgb(238, 234, 234);   
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 10px;
+}
+.main-section-contactpart-details-info > div {
+    display: flex;
+    gap: 20px;
+}
+.main-section-contactpart-details-info img {
+    margin-top: 20px;
+}
+.main-section-contactpart-details-info img:hover {
+    width:50px;
+    height:50px;
+    cursor: pointer;
+}
+.main-section-contactpart-details-info h4 {
+    margin-top: 40px;
+}
+.main-section-contactpart-details-info p {
+    font-weight: 400;
+    margin-top: 5px; 
+    margin-left: 100px;
+}
+.main-section-contactpart-details-info iframe {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+input, button,textarea {
+    font-size: inherit;
+}
+.main-section-contactpart-details-form  p {
+    font-weight: 600; 
+}
+.main-section-contactpart-details-form input {
+    width: 60%;
+    padding: 5px 10px;
+    margin:8px 0;
+}
+.main-section-contactpart-details-form textarea {
+    /* border: 2px solid black;  */
+    margin-left: 40px;
+}
+.main-section-contactpart-details-form input::placeholder{
+    color: #50357e;
+    font-size:17px;
+} 
+.main-section-contactpart-details-form textarea::placeholder{
+    color: #50357e;
+    font-size:17px;
+} 
+.main-section-contactpart-details-form button {
+    width: 40%;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color:darkcyan;
+    padding: 10px 15px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 170px;
+    border: 2px solid black;   
+    border-radius:25px;
+    cursor: pointer;
+}
+.main-section-contactpart-details-form button:hover {
+    background-color: darkgreen;
+}
+
+
+   /* FOOTER PART  */
+
+.footpart {
+    background-color:lch(62.71% 4.7 19.76);
+    height: 500px;
+    margin-top: 20px;
+    /* margin-bottom: 0px; */
+}
+.footpart article{
+    display: flex;
+    margin: 0 300px; 
+    gap: 80px;
+}
+.footpart div{
+    text-align: center; 
+    align-content: center;  
+    font-size: 22px;
+    padding: 20px;
+    font-weight: 400;
+}
+.footpart-icon img {
+    width:25px; 
+    height: 25px;
+    gap: 15px;
+}
+.footpart-icon img:hover {
+    width:30px;
+    height:30px;
+}
+.footpart-links h4 {
+    margin-top: 70px; 
+}
+.footpart-links  ul{
+   list-style-type: none; 
+   line-height: 35px;
+   font-weight: 500;
+   text-align: left;
+}
+.footpart-links a{
+    text-decoration: none;
+    color: black;
+}
+.footpart-copy {
+   text-align: center;
+   align-content: center;
+   font-size:22px ; 
+   padding: 5px;
+   font-weight: 500;
+   /* background-color: aqua;  */
+} 
+
+
+            /* MEDIA QUERY  */
+  
+/* Moblie- small  */
+
+@media screen and (max-width:425px) {
+    /* headpart  */ 
+.hero-section {
+    width: 985px; 
+    height: 150vh;  
+}
+.navbar h2 {
+    margin-left: 42px; 
+}
+.navbar a {
+    margin-left: 90px;   
+    padding: 0px; 
+
+}
+.navbar a:hover{
+    background:none;
+}
+.hero-section-term {
+    padding: 60px 30px;
+    margin-left: 14px;
+}
+.hero-section-term > h2{
+    font-size: 2.5rem;
+    width:300px ;
+}
+            
+/* About Part  */
+            
+.main-section {
+    padding: 0 10px; 
+    width: 985px; 
+    font-size:40px;
+}
+.main-section-head h3 {
+    font-size: 70px;
+    }
+.main-section-head p {
+    text-indent: 25px;
+    padding: 10px;
+    width: 925px;
+    text-align:justify;
+    line-height: 70px;
+}
+.main-section-mid {
+    display:block;
+    height:1850px; 
+    gap:0; 
+} 
+.main-section-image img {
+    padding: 15px;
+    margin-top: 50px;
+    margin-left: 80px; 
+    height: 700px;
+    width: 700px;  
+ } 
+.main-section-image img:hover {
+    width: 780px;
+    height: 780px;  
+}
+.main-section-content h4 {
+    font-size: 55px; 
+    margin-left: 170px;
+}
+.main-section-content p {
+    font-size: 45px;
+    margin-left:300px;
+    font-weight: 600;
+}
+.main-section-content div {
+    margin-left: 80px;
+    display: block; 
+}
+.main-section-content li {
+    line-height: 80px;
+} 
+.main-section-content ul {
+    list-style-image:none;
+}
+            
+ /* Skill Part  */
+.main-section-skillpart h3 {
+    font-size:70px;
+}
+.main-section-skillpart > p {
+    text-indent: 50px;
+}
+.main-section-skillpart-idea {
+    margin-top: 50px;
+    padding: 5px; 
+    grid-template-areas: "partone";
+    grid-template-rows: 500px;
+}
+.main-section-skillpart-idea-head1{
+    border-radius: 5px;
+    font-size: 35px;
+    padding: 25px;
+}
+.main-section-skillpart-idea-head2{
+    border-radius: 5px;
+    font-size:35px ;
+    padding:25px ;
+}
+            
+/* Resume Part  */
+            
+.main-section-resumepart > h3 {
+    font-size: 70px;
+ }
+.main-section-resumepart-idea{
+    padding: 5px;
+    grid-template-areas: "main";
+    grid-template-rows:1630px; 
+}
+.main-section-resumepart-idea > div {  
+    padding: 5px;
+    font-size:40px;  
+    border-radius:5px;
+} 
+.main-section-resumepart-idea img {
+    width: 20px;
+    height: 20px;
+}
+.main-section-resumepart-idea h2 {
+    font-size: 42px;
+}
+.main-section-resumepart-idea li p {
+    font-weight:500 ;
+    text-align:left;
+    line-height: 43px;
+    width:auto;
+}
+            
+/* Contact Part  */
+.main-section-contactpart h3 {
+    font-size: 70px;  
+}
+.main-section-contactpart-details {
+    padding: 5px;  
+    grid-template-areas: "mid";
+    grid-template-rows: 1600px;
+} 
+.main-section-contactpart-details-info img {
+    margin-top: 30px;
+    width: 100px;
+    height: 100px;
+}
+.main-section-contactpart-details-info img:hover {
+    width:130px;
+    height:130px;
+}
+.main-section-contactpart-details-info h4 {
+    font-size: 40px;
+    margin-left: 10px;
+}
+.main-section-contactpart-details-info p {
+    margin-left: 200px;
+    font-size: 40px;
+}
+.main-section-contactpart-details-info iframe {
+    margin-left: 70px;
+    width: 700px;
+    height: 600px;
+} 
+.main-section-contactpart-details-form input {
+    /* width: 50%;  */
+    padding: 10px;  
+    margin:10px 10px;
+}
+.main-section-contactpart-details-form textarea {
+    margin-left: 50px;
+} 
+.main-section-contactpart-details-form input::placeholder{
+    font-size:28px;
+} 
+.main-section-contactpart-details-form textarea::placeholder{
+    font-size:28px;
+} 
+.main-section-contactpart-details-form p {
+    font-size: 35px;  
+}
+.main-section-contactpart-details-form button {
+    width: 35%;  
+    padding: 10px 2px;
+    margin-top: 35px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+            
+/* Footer part  */
+.footpart {
+    height: 600px;  
+    width: 985px;
+    background-color:lch(62.71% 4.7 19.76);
+}
+.footpart div{ 
+    font-size: 30px;
+    font-weight: 600;
+}
+.footpart article{
+   margin: 0 100px; 
+}
+.footpart-links  ul{
+    line-height: 42px;
+    /* margin-top: 0px;  */
+}
+.footpart-icon h4{
+    margin-top: 60px;
+}
+
+.footpart-icon img {
+    width:40px; 
+    height: 40px;
+}
+.footpart-icon img:hover {
+    width:50px;
+    height:50px;
+}
+}         
+
+/* Mobile -landscape , Tablet   */
+
+@media screen and (min-width:426px) and (max-width:768px) {  
+    /* headpart  */ 
+.hero-section {
+        width: 1200px;   
+        height: 180vh; 
+}
+
+.navbar h2 {
+    margin-left: 42px; 
+}
+.navbar a {
+    margin-left: 130px;   
+    padding: 0px; 
+
+}
+.navbar a:hover{
+    background:none;
+}
+.hero-section-term {
+    padding: 10px 40px;
+}
+.hero-section-term > h2{
+    font-size:2.8rem;
+    width: 400px;
+    
+}
+
+/* About part */  
+.main-section {
+    padding: 0 10px; 
+    width: 1200px;
+    font-size:30px;
+}
+.main-section-head h3 {
+    font-size: 50px;
+}
+.main-section-head p {
+    text-indent: 45px;
+    padding: 20px;
+    /* width: 925px;  */
+    text-align:justify;
+    line-height: 40px;
+}
+.main-section-mid {
+    display:block;
+    height:1100px; 
+    gap:0; 
+} 
+.main-section-image img {
+    margin-top: 25px;
+    margin-left: 350px; 
+    height: 400px;
+    width: 400px; 
+} 
+.main-section-image img:hover {
+    width: 500px;
+    height: 500px; 
+    
+}
+.main-section-content h4 {
+    font-size: 35px; 
+    margin-left: 390px;
+}
+.main-section-content p {
+    font-size: 30px;
+    margin-left:450px;
+}
+.main-section-content div {
+    margin-left: 250px;
+    display: block; 
+}
+.main-section-content li {
+    line-height: 50px;
+} 
+/* Skill Part  */
+.main-section-skillpart h3 {
+    font-size: 50px;
+}
+.main-section-skillpart > p {
+    text-indent: 40px;
+}
+.main-section-skillpart-idea {
+    padding: 20px; 
+    grid-template-rows:400px;
+    margin-top: 60px;
+}
+.main-section-skillpart-idea-head1{
+    border-radius: 14px;
+    font-size: 25px;
+    padding:10px;
+}
+.main-section-skillpart-idea-head2{
+    border-radius: 14px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+/* Resume Part  */
+
+.main-section-resumepart > h3 {
+    font-size: 50px;
+}
+.main-section-resumepart-idea{
+    padding: 5px;
+    grid-template-rows:1150px; 
+}
+.main-section-resumepart-idea > div {  
+    padding: 5px;
+    font-size:25px;
+    border-radius: 20px;
+} 
+.main-section-resumepart-idea img {
+    width: 20px;
+    height: 20px;
+}
+.main-section-resumepart-idea h2 {
+    font-size: 27px;
+}
+.main-section-resumepart-idea li p {
+    font-weight:400 ;
+    text-align:left;
+    width:auto;
+    line-height:35px;
+} 
+
+/* Contact Part  */
+
+.main-section-contactpart h3 {
+    font-size:50px;
+}
+.main-section-contactpart-details {
+    padding: 5px;
+    display:block;
+} 
+.main-section-contactpart-details > div { 
+    padding: 60px;
+    border-radius:0;
+}
+.main-section-contactpart-details-info img {
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.main-section-contactpart-details-info img:hover {
+    width:100px;
+    height:100px;
+}
+.main-section-contactpart-details-info h4 {
+    font-size: 35px;
+}
+.main-section-contactpart-details-info p {
+    margin-top: 0;
+    margin-left: 180px; 
+    font-size: 30px;
+}
+.main-section-contactpart-details-info iframe {
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 800px;
+    height: 600px;
+} 
+.main-section-contactpart-details-form input {
+    width: 65%;
+    padding: 15px;
+    margin:10px;
+}
+.main-section-contactpart-details-form textarea {
+    margin-left: 75px;
+} 
+.main-section-contactpart-details-form input::placeholder{
+    font-size:25px;
+} 
+.main-section-contactpart-details-form textarea::placeholder{
+    font-size:25px;
+} 
+.main-section-contactpart-details-form p {
+    font-size:30px ;
+}
+.main-section-contactpart-details-form button {
+    width: 40%;
+    padding: 15px 10px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 25px;
+    font-size: 23px;
+}
+/* Footer Part*/
+.footpart {
+    height: 570px;
+    width: 1200px;
+}
+.footpart div{ 
+    font-size: 25px;
+    font-weight: 600;
+}
+.footpart article{
+   margin: 0 200px; 
+}
+.footpart-links  ul{
+    line-height: 40px;
+    /* margin-top: 0px;  */
+}
+.footpart-icon h4{
+    margin-top: 60px;
+}
+
+.footpart-icon img {
+    width:40px; 
+    height: 40px;
+}
+.footpart-icon img:hover {
+    width:50px;
+    height:50px;
+}
+}
+
+
+
+
+/* Tablet -landscape , small - Laptop  */
+
+
+@media screen and (min-width:769px) and (max-width:1024px) { 
+    /* headpart  */ 
+.hero-section {
+        width: 1050px;  
+        height: 120vh; 
+}
+.navbar h2 {
+    margin-left: 42px; 
+}
+.navbar a {
+    margin-left: 100px;   
+    padding: 0px; 
+
+}
+.hero-section-term {
+    padding: 10px 40px;
+}
+.hero-section-term > h2{
+    font-size:2.5rem;
+    width: 400px;  
+}
+
+/* About part */  
+.main-section {
+    padding: 0 10px; 
+    width: 1050px;
+    font-size:20px; 
+}
+.main-section-head h3 {
+    font-size: 25px;
+}
+.main-section-head p {
+    text-indent: 45px;
+    padding: 20px;
+    /* width: 925px;  */
+    text-align:justify;
+    line-height: 40px;
+}
+.main-section-mid {
+    display:block;
+    height:1100px; 
+    gap:0; 
+} 
+.main-section-image img {
+    margin-top: 25px;
+    margin-left: 250px; 
+    height: 400px;
+    width: 400px; 
+} 
+.main-section-image img:hover {
+    width: 500px;
+    height: 500px; 
+}
+.main-section-content h4 {
+    font-size: 35px; 
+    margin-left: 280px;
+}
+.main-section-content p {
+    font-size: 20px;
+    margin-left:350px;
+}
+.main-section-content div {
+    margin-left: 100px;
+    display: block; 
+}
+.main-section-content li {
+    line-height: 50px;
+} 
+/* Skill Part  */
+.main-section-skillpart h3 {
+    font-size: 25px;
+}
+.main-section-skillpart > p {
+    text-indent: 40px;
+}
+.main-section-skillpart-idea {
+    padding: 20px; 
+    grid-template-rows:400px;
+    margin-top: 60px;
+}
+.main-section-skillpart-idea-head1{
+    border-radius: 14px;
+    font-size: 25px;
+    padding:10px;
+}
+.main-section-skillpart-idea-head2{
+    border-radius: 14px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+/* Resume Part  */
+
+.main-section-resumepart > h3 {
+    font-size: 25px;
+}
+.main-section-resumepart-idea{
+    padding: 5px;
+    grid-template-rows:1000px; 
+}
+.main-section-resumepart-idea > div {  
+    padding: 5px;
+    font-size:20px;
+    border-radius: 20px;
+} 
+.main-section-resumepart-idea img {
+    width: 15px;
+    height: 15px;
+}
+.main-section-resumepart-idea h2 {
+    font-size: 20px;
+}
+.main-section-resumepart-idea li p {
+    font-weight:400 ;
+    text-align:left;
+    width:auto;
+    line-height:35px;
+} 
+
+/* Contact Part  */
+
+.main-section-contactpart h3 {
+    font-size:25px;
+}
+.main-section-contactpart-details {
+    padding: 5px;
+    display:block;
+} 
+.main-section-contactpart-details > div { 
+    padding: 60px;
+    border-radius:0;
+}
+.main-section-contactpart-details-info img {
+    margin-top: 30px;
+    width: 70px;
+    height: 70px;
+}
+.main-section-contactpart-details-info img:hover {
+    width:100px;
+    height:100px;
+}
+.main-section-contactpart-details-info h4 {
+    font-size: 23px;
+}
+.main-section-contactpart-details-info p {
+    margin-top: 0;
+    margin-left: 130px; 
+    font-size: 20px;
+}
+.main-section-contactpart-details-info iframe {
+    margin-left: 10px;
+    margin-top: 60px;
+    width: 600px;
+    height: 400px;
+} 
+.main-section-contactpart-details-form input {
+    width: 65%;
+    padding: 15px;
+    margin:10px;
+}
+.main-section-contactpart-details-form textarea {
+    margin-left: 75px;
+} 
+.main-section-contactpart-details-form input::placeholder{
+    font-size:19px;
+} 
+.main-section-contactpart-details-form textarea::placeholder{
+    font-size:19px;
+} 
+.main-section-contactpart-details-form p {
+    font-size:20px ;
+}
+.main-section-contactpart-details-form button {
+    width: 40%;
+    padding: 15px 10px;
+    margin-top: 30px;
+    margin-left: 200px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+/* Footer Part*/
+.footpart {
+    height: 550px;
+    width: 1050px;
+}
+.footpart div{ 
+    font-size: 20px;
+    font-weight: 600;
+}
+.footpart article{
+    margin: 0 230px; 
+ }
+ .footpart-links  ul{
+     line-height: 40px;
+     /* margin-top: 0px;  */
+ }
+ .footpart-icon h4{
+     margin-top: 45px;
+ }
+ 
+ .footpart-icon img {
+     width:40px; 
+     height: 40px;
+ }
+ .footpart-icon img:hover {
+     width:50px;
+     height:50px;
+ }
+}
+
+
+
+
+  /* laptop moderate  */ 
+  @media screen and (min-width:1025px) and (max-width:1200px){ 
+    /* Header part*/
+.navbar h2 {
+    margin-left: 42px; 
+}
+.navbar a {
+    margin-left: 100px;   
+    padding: 0px; 
+
+}
+    .hero-section-term {
+        padding: 10px 40px;
+    }
+    .hero-section-term > h2{
+        font-size:2.5rem;
+        width: 400px;
+    }
+    /* About Part  */ 
+    .main-section {
+        padding: 0 10px; 
+    }
+    .main-section-mid {
+        gap:40px; 
+    } 
+    .main-section-image img {
+        margin-top: 55px;
+        margin-left: 50px;  
+        height: 300px; 
+        width: 300px;  
+    } 
+    .main-section-image img:hover {
+        width: 350px;
+        height: 350px; 
+    }
+    .main-section-content h4 {
+        font-size: 30px; 
+        margin-left: 30px;  
+    }
+    .main-section-content p {
+        font-size: 25px;
+        margin-left:100px;
+    }
+    .main-section-content div {
+        margin-left: 0;
+    }
+    .main-section-content li {
+        line-height: 50px;
+        font-weight: 400;
+    }
+    /* Resume Part  */ 
+    
+    .main-section-resumepart-idea{
+        grid-template-rows:1000px; 
+    }
+    .main-section-resumepart-idea img {
+        width: 14px;
+        height: 14px;
+    }
+    .main-section-resumepart-idea h2 {
+        font-size: 18px;
+    }
+    .main-section-resumepart-idea li p {
+        font-weight:400 ;
+        text-align:justify;
+        width:38vw;
+        line-height:35px;
+    } 
+    
+    /* Contact Part  */ 
+    
+    .main-section-contactpart-details {
+        padding: 2px;
+    }
+    .main-section-contactpart-details-form button {
+        width: 40%; 
+        padding: 15px 10px;
+        margin-top: 30px;
+        margin-left: 140px;
+        margin-bottom: 25px;
+        font-size: 18px;
+    }
+
+    
+/* Footer Part*/
+.footpart {
+    height: 550px;
+    width: 1200px;
+}
+.footpart div{ 
+    font-size: 20px;
+    font-weight: 600;
+}
+.footpart article{
+    margin: 0 230px; 
+ }
+ .footpart-links  ul{
+     line-height: 40px;
+     /* margin-top: 0px;  */
+ }
+ .footpart-icon h4{
+     margin-top: 45px;
+ }
+ 
+ .footpart-icon img {
+     width:40px; 
+     height: 40px;
+ }
+ .footpart-icon img:hover {
+     width:50px;
+     height:50px;
+ }
+}
+    
